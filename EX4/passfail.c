@@ -15,14 +15,14 @@ int main(void){
   printf("Enter the marks for the section3: ");
   scanf("%d",&section3);
 
- avg = (section1 + section2 + section3)/3;
+  avg = (section1 + section2 + section3)/3.0;
 
 
   if(section1 >= 70  && section2 >= 70 && section3 >= 70 && avg >= 75 ){
-  printf("Pass! \n");
+    printf("Pass! \n");
 
   }else{
-  printf("Fail! \n");
+    printf("Fail! \n");
 
   }
 

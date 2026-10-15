@@ -19,10 +19,10 @@ int main(void){
 	
 	
   if(fingerprint_match && retinal_match || fingerprint_match && access_card_valid || retinal_match && access_card_valid){
-  printf("Access Granted!\n");
+    printf("Access Granted!\n");
 
   }else{
-  printf("Access Denied!\n");
+    printf("Access Denied!\n");
  
   }
 
