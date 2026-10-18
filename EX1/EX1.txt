@@ -1,0 +1,28 @@
+Qustion 1 (a=6, b=9, c=14, flag=1)
+
+1. c == a + b || !flag
+   14 == 6 + 9 || !1
+   14 == 15 || 0
+   false || 0
+   false
+
+2. a! = 7 && flag || c >= 6
+   6! = 7 && 1 || 14 >= 6
+   6! = 7 && true
+   true 
+   From this, c>= 6 is not evaluuated beacause || short-circuits.
+
+3. !(b <= 12) && a % 2 == 0
+   !(9 <=) && 6 % 2 == 0
+   !(true) && 6 % 2 == 0
+   false && true
+   false
+   From this, a % 2 == 0 is not evaluated because && short-circuits.
+
+4. !(a > 5 || c< a + b)
+   !(6 > 5 || 14 < 15)
+   !(true || 14 < 15)
+   !(true || true)
+   !(true)
+   false
+   From this, c < a + b is not evaluated because || short-circuits.
