@@ -1,0 +1,9 @@
+Q1 (a=6, b=9, c=14, flag=1)
+
+1. c== a+b || !flag  -> ; nothing skipped (c==15 is false, so !flag is checked)
+
+2. a != 7 && flag || c >=6 -> 1 ; c >=6 not evaluated (&& gives 1, so || stopes)
+
+3. !(b <= 12) && a% 2 == 0 -> 0 ; a % 2 == 0 not evaluated ( !(b<=12) is false, so && stops)
+
+4. !(a>5 || c< a+b) -> 0; c< a+b not evaluated (a>5 is true, so || stops)
